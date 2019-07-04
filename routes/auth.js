@@ -1,3 +1,6 @@
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable consistent-return */
+/* eslint-disable no-shadow */
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
@@ -7,9 +10,9 @@ module.exports = (app, next) => {
 
   /*
    * Ruta de autenticación usando email y password
-   * Toda autenticación se hace a través de POST, ya que de esta forma nos 
-   * aseguramos que la información de email y password vayan cifradas en el 
-   * cuerpo de la petición (siempre y cuando usemos HTTPS con protocolos 
+   * Toda autenticación se hace a través de POST, ya que de esta forma nos
+   * aseguramos que la información de email y password vayan cifradas en el
+   * cuerpo de la petición (siempre y cuando usemos HTTPS con protocolos
    * seguros).
    */
   app.post('/auth', (req, resp, next) => {

@@ -1,3 +1,5 @@
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable consistent-return */
 const kill = require('tree-kill');
 const { cleanUp } = require('./globalSetup');
 

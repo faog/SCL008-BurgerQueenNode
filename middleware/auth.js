@@ -1,3 +1,7 @@
+/* eslint-disable no-nested-ternary */
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable no-shadow */
+/* eslint-disable consistent-return */
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
